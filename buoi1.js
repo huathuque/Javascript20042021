@@ -16,3 +16,11 @@
 // tạo file mới
 // git add . (lưu file mới)
 // git commit -m "message" (đóng gói lưu trữ cho phiên làm việc)
+
+// Crtl + ~ : Mở Terminal nhanh
+// 1 - Khai báo biến (dynamic type)
+var a = 5
+let b = 10
+const c = 15
+c = 10
+console.log(c)
