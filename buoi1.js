@@ -19,8 +19,12 @@
 
 // Crtl + ~ : Mở Terminal nhanh
 // 1 - Khai báo biến (dynamic type)
-var a = 5
-let b = 10
-const c = 15
-c = 10
-console.log(c)
+// var a = 5
+// let b = 10
+// const c = 15
+// c = 10
+// console.log(c)
+
+// 2 - Kiểu dữ liệu
+let a
+console.log(a)
