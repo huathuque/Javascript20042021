@@ -150,8 +150,6 @@
 // // a > b = 1
 // // a < b = -1
 // // a == b = 0
-// Toán tử ba ngôi
-// bieuthuc ? true : false
 // if(a > b){
 //     console.log(1)
 // }else if(a < b){
@@ -160,6 +158,37 @@
 //     console.log(0)
 // }
 
-let a = 5
-let b = 5
-a > b ? console.log("A lon hon B") : console.log("a be hon hoac bang b")
+// Toán tử ba ngôi
+// bieuthuc ? true : false
+// let a = 5
+// let b = 5
+// a > b ? console.log("A lon hon B") : console.log("a be hon hoac bang b")
+
+// 9: vòng lặp for
+// const arrNames = ["teo","ti","tun","tuan"]
+// for(let i = 0 ; i < arrNames.length ; i++){
+//     console.log(arrNames[i])
+// }
+// i là input
+
+// viet 1 phuong thuc kiem tra so nguyen to
+// số input là số nguyên tố, số input không là số nguyên tố
+function kiemTraSoNguyenTo(number){
+    let count = 0
+    if (number < 2){
+        console.log("khong phai so nguyen to")
+        return
+    }
+
+    for (let i = 2 ; i <= number ; i++){
+        if (number % i == 0){
+            count++
+        }
+    }
+
+    if (count == 1){
+        console.log("la so nguyen to")
+    }else{
+        console.log("khong phai la so nguyen to")
+    }
+}
