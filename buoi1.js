@@ -85,7 +85,6 @@
 // function showname(name){
 //     console.log(name)
 // }
-
 // function tinhtong(a , b){
 //     return a + b
 // }
@@ -94,11 +93,42 @@
 // console.log(ketqua)
 // => Teo & 9
 
-function showname(name){
-    console.log(name)
-}
+// gọi biến ko tồn tại
+// function showname(name){
+//     console.log(name)
+// }
+// function tinhtong(a , b){
+//     return a + b
+// }
+// console.log(showname("Teo"))
+// => undefined
 
-function tinhtong(a , b){
-    return a + b
+// có return
+// function showname(name){
+//     console.log(name)
+//     return
+// }
+// function tinhtong(a , b){
+//     return a + b
+// }
+// console.log(showname("Teo"))
+// => undefined
+
+// có return
+// function tinhtong(a , b){
+//     return a + b
+// }
+// let a
+// console.log(showname("Teo"))
+// const ketqua = tinhtong(5,a)
+// console.log(ketqua)
+
+// 7: Object method
+const teo = {
+    name : "nguyen van a",
+    age : 10,
+    showInfo : function info(){
+        console.log("Ten : " + this.name + " , Tuoi : " + this.age)
+    }
 }
-console.log(showname("Teo"))
+teo.showInfo()
