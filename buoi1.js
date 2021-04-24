@@ -124,11 +124,42 @@
 // console.log(ketqua)
 
 // 7: Object method
-const teo = {
-    name : "nguyen van a",
-    age : 10,
-    showInfo : function info(){
-        console.log("Ten : " + this.name + " , Tuoi : " + this.age)
-    }
-}
-teo.showInfo()
+// const teo = {
+//     name : "nguyen van a",
+//     age : 10,
+//     showInfo : function info(){
+//         console.log("Ten : " + this.name + " , Tuoi : " + this.age)
+//     }
+// }
+// teo.showInfo()
+// (): tượng trưng cho việc thực thi---
+
+// 8 : Các phép so sánh
+// let a = 5
+// let b = 10
+// chỉ có 6 giá trị bằng false: false, null, '', Nan, undefined, 0 (tham khảo: https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+// if(-1){
+//     console.log("A lon hon b")
+// }else{
+//     console.log("A be hon hoac bang B")
+// }
+// =? TRUE
+
+// let a = 5
+// let b = 6
+// // a > b = 1
+// // a < b = -1
+// // a == b = 0
+// Toán tử ba ngôi
+// bieuthuc ? true : false
+// if(a > b){
+//     console.log(1)
+// }else if(a < b){
+//     console.log(-1)
+// }else if(a == b){
+//     console.log(0)
+// }
+
+let a = 5
+let b = 5
+a > b ? console.log("A lon hon B") : console.log("a be hon hoac bang b")
