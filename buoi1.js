@@ -271,3 +271,17 @@
 // Lấy phần tử
 // arrNumbers.slice
 
+// 13 - Higher order function (callback) (ngôn ngữ khác gọi là interface)
+function nhan2(number){
+    return number * 2
+}
+
+function tinhTong(arr,func){
+    let result = 0
+    for (const value of arr){
+        result += value
+    }
+    return func(result)
+}
+
+console.log(tinhTong([1,2],nhan2))
