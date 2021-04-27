@@ -220,7 +220,54 @@
 //     name : 'Tèo',
 //     age : 10
 // }
-
 // for (const key in teo) {
 //     console.log(key)
 // }
+
+// Cách viết ngắn gọn cho Lesson 12 For...in
+// var apartment = {
+//   bedroom: {
+//     area: 20,
+//     bed: {
+//       type: 'twin-bed',
+//       price: 100
+//     }
+//   }
+// }
+
+// function getkey(object){
+//     for (const key in object){
+//         console.log(key)
+//         if (typeof object[key] === 'object'){
+//             getkey(object[key])
+//         }        
+//     }
+// }
+// getkey(apartment)
+
+// 12 - Array Method
+// const arrNumbers = [4,1,2,5,10,9]
+// Thêm phần tử cuối mảng
+// arrNumbers.push(11)
+// console.log(arrNumbers)
+// Xóa phần tử cuối
+// arrNumbers.pop()
+// console.log(arrNumbers)
+// Thêm phần tử ở đầu
+// arrNumbers.unshift(15)
+// console.log(arrNumbers)
+// Xóa phần tử ở đâu
+// arrNumbers.shift()
+// console.log(arrNumbers)
+// Xóa phần tử ở giữa
+// arrNumbers.splice(position,amount)
+// arrNumbers.splice(1,4)
+// console.log(arrNumbers)
+// Thêm phần tử ở giữa
+// arrNumbers.splice(position,không xóa ghi '0',các số muốn thêm vào)
+// arrNumbers.splice(1,0,20,21)
+// console.log(arrNumbers)
+// splice có thể thay thế các cái trên nhưng đòi hỏi tính logic hơn
+// Lấy phần tử
+// arrNumbers.slice
+

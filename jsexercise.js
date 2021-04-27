@@ -99,26 +99,39 @@
 
 // Sử dụng vòng lặp for...in để in ra tất cả các key trong object sau, in ra cả các key của các nested object (object con lồng bên trong object lớn)
 // Gợi ý: đây là bài tập khó, bạn nên tìm hiểu về recursive trước
-var apartment = {
-  bedroom: {
-    area: 20,
-    bed: {
-      type: 'twin-bed',
-      price: 100
-    }
-  }
-}
+// var apartment = {
+//   bedroom: {
+//     area: 20,
+//     bed: {
+//       type: 'twin-bed',
+//       price: 100
+//     }
+//   }
+// }
 
-function getkey(object){
-    for (const key in object){
-        console.log(key)
-        for (const keyBedroom in object[key]){
-            console.log(keyBedroom)
-            for (const keyBed in object[key][keyBedroom]){
-                console.log(keyBed)
-            }
-        }
-    }
-}
+// function getkey(object){
+//     for (const key in object){
+//         console.log(key)
+//         for (const keyBedroom in object[key]){
+//             console.log(keyBedroom)
+//             for (const keyBed in object[key][keyBedroom]){
+//                 console.log(keyBed)
+//             }
+//         }
+//     }
+// }
 
-getkey(apartment)
+// getkey(apartment)
+
+// Lesson 13 - Array Method
+// Trừ 3 giá trị cuối
+// function removeEnd(arr,n){
+//     arr.splice(arr.length - n, n)
+// }
+// console.log(removeEnd([2 , 3 , 1 , 8 , 9 , 7], 3 ))
+
+// lấy phần tử đầu tiên của mảng. Truyền tham số 'n' sẽ trả về các phần tử 'n' đầu tiên của mảng
+// function removeEnd(arr,n){
+//     return arr.slice(0,n)
+// }
+// console.log(removeEnd([1 , 2 , 3, 4, 5, 6], 5 ))
