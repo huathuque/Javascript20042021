@@ -18,7 +18,7 @@
 // git commit -m "message" (đóng gói lưu trữ cho phiên làm việc)
 // git push (sync github cloud)
 
-// Crtl + ~ : Mở Terminal nhanh
+// Crtl + ~ : Mở Terminal nhanh shorthand
 // 1 - Khai báo biến (dynamic type)
 // var a = 5
 // let b = 10
@@ -33,25 +33,27 @@
 // let a = 10
 // console.log(typeof(typeof(a)))
 
-// 3: object
-// mutable (giá trị có thể gán lại), immutable (ngược lại)
+// 3: object {}
+// Cách duyệt dữ liệu theo key - không được gọi là iterator
+// + mutable (thông thường là kiểu dữ liệu nguyên thủy, giá trị có thể gán lại)
+// + immutable (ngược lại, object, array)
 // const teo = {
 //     name : "Nguyen Van Teo",
 //     age : 10
-// } 
+// }
 // Lồng vào nhau thì thêm object
 // const teo = {
 //     name : {
-//         a : "a"
-//     }
+//         a : "Nguyen Van Teo"
+//     },
 //     age : 10
 // } 
-// hoặc 
+// // hoặc 
 // console.log(teo.name.a)
 // hoặc
-// console.log(teo['name.a'])
+// console.log(teo['name.a']) - cách này có thể duyệt tất cả các key
 
-// 4: Array
+// 4: Arraylist
 // Iterator: cách duyệt dữ liệu theo index
 
 // const arrNames = ["tèo","tí","tủn"]
@@ -67,19 +69,20 @@
 
 // tăng 1 giá trị a
 // a = a + 1
-// a++
+// a++ - gán rồi mới tăng
 // a = a - (-1)
-// ++a
+// ++a - tăng cùng lúc gán
 
 // let a = 5
 // let b = 10
 // let c = a++ - b++ - --a - --b + --b - --a + a-- + b--
 // console.log(a, b ,c)
-// 5 - 10 - --a - --b + --b - --a + a-- + b-- (a=6,b=11)
-// 6 - 11 - 5 - 10 + --b - --a + a-- + b-- (a=5,b=10)
-// 6 - 11 - 5 - 10 + 9 - 4 + a-- + b-- (a=4,b=10)
-// 6 - 11 - 5 - 10 + 9 - 3 + 4 + 10 (a=3,b=8)
-// 6 - 11 - 5 + 9 = -2
+
+// 5 - 10 - --a - --b + --b - --a + a-- + b-- (a = 6, b = 11)
+// 6 - 11 - 5 - 10 + --b - --a + a-- + b-- (a = 5, b = 10)
+// 6 - 11 - 5 - 10 + 9 - 4 + a-- + b-- (a = 4, b = 9)
+// 6 - 11 - 5 - 10 + 9 - 4 + 4 + 9 (a = 3, b = 8)
+// 6 - 11 - 5 - 10 + 9 + 9 = -26 + 24 = -2
 
 // 6 : Function
 // function showname(name){
@@ -119,11 +122,10 @@
 //     return a + b
 // }
 // let a
-// console.log(showname("Teo"))
 // const ketqua = tinhtong(5,a)
 // console.log(ketqua)
 
-// 7: Object method
+// 7: Object method - có lồng thêm phương thức thì gọi là object method
 // const teo = {
 //     name : "nguyen van a",
 //     age : 10,
@@ -135,11 +137,9 @@
 // (): tượng trưng cho việc thực thi---
 
 // 8 : Các phép so sánh
-// let a = 5
-// let b = 10
-// chỉ có 6 giá trị bằng false: false, null, '', Nan, undefined, 0 (tham khảo: https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+// chỉ có 6 giá trị bằng false: false, null, '', NaN, undefined, 0 (tham khảo: https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 // if(-1){
-//     console.log("A lon hon b")
+//     console.log("A lon hon B")
 // }else{
 //     console.log("A be hon hoac bang B")
 // }
@@ -173,22 +173,54 @@
 
 // viet 1 phuong thuc kiem tra so nguyen to
 // số input là số nguyên tố, số input không là số nguyên tố
-function kiemTraSoNguyenTo(number){
-    let count = 0
-    if (number < 2){
-        console.log("khong phai so nguyen to")
-        return
-    }
 
-    for (let i = 2 ; i <= number ; i++){
-        if (number % i == 0){
-            count++
-        }
-    }
+// let parameter = "Hứa Thụ Trí";
+// parameter = "Hứa Thụ Quế";
 
-    if (count == 1){
-        console.log("la so nguyen to")
-    }else{
-        console.log("khong phai la so nguyen to")
-    }
-}
+// function vietTenBe(tenNguoi) {
+//     console.log(tenNguoi);
+// }
+
+// vietTenBe("Hứa Thụ Quế 11111");
+// vietTenBe("Hứa Thụ Trí 22222");
+// vietTenBe(parameter);
+
+// function kiemTraSoNguyenTo(number){
+//     let count = 0
+//     if (number < 2){
+//         console.log("khong phai so nguyen to")
+//         return
+//     }
+
+//     for (let i = 2 ; i <= number ; i++){
+//         if (number % i == 0){
+//             count++
+//         }
+//     }
+
+//     if (count == 1){
+//         console.log("la so nguyen to")
+//     }else{
+//         console.log("khong phai la so nguyen to")
+//     }
+// }
+
+// kiemTraSoNguyenTo(10)
+
+// 10 - For of - chỉ sử dụng cho array, không dùng cho object
+// const arrNames = ['Tân','Bình','An']
+
+// for (const value of arrNames){
+//     console.log(value)
+// }
+
+// 11 - For in
+// const arrNames = ['Tèo','Tí','Tủn']
+// const teo = {
+//     name : 'Tèo',
+//     age : 10
+// }
+
+// for (const key in teo) {
+//     console.log(key)
+// }
