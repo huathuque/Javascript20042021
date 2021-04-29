@@ -401,3 +401,13 @@
 // ob["b"] = 1
 // console.log(ob)
 
+//16 - Hàm sort
+// const arrNums = [1,10,2,20,15,5,6]
+
+// console.log(arrNums.sort(function(a , b){
+//     return b - a
+// }))
+
+// const arrChar = ['a','A','b','c','C','B']
+
+// console.log(arrChar.sort())
