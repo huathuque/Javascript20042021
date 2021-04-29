@@ -382,9 +382,22 @@
 // // yêu cầu: in ra mảng person dưới 25t, chỉ lấy name.
 
 //Bài tập khó:
+// function countOccurrences(arr) {
+//     const object = arr.reduce(function(accumulator,currentValue){
+//         if(currentValue in accumulator){
+//             accumulator[currentValue]++
+//         }else{
+//             accumulator[currentValue] = 1
+//         }
+//         return accumulator
+//     },{})
+//     console.log(object)
+// }
+// countOccurrences(["a", "b", "c", "b", "a", "a"]);
+// yêu cầu in ra a,b,c lập bao nhiêu lần {a : 3, b : 2, c : 1}
 
-function countOccurrences(arr) {
+// const ob = {"a" : 1}
+// ob["a"] = 2
+// ob["b"] = 1
+// console.log(ob)
 
-}
-countOccurrences(["a", "b", "c", "b", "a", "a"]);
-// {a : 3, b : 2, c : 1}
