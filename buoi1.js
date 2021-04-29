@@ -205,9 +205,10 @@
 //     }
 // }
 
-// kiemTraSoNguyenTo(10)
+// kiemTraSoNguyenTo(3)
 
 // 10 - For of - chỉ sử dụng cho array, không dùng cho object
+// dùng để lấy value
 // const arrNames = ['Tân','Bình','An']
 
 // for (const value of arrNames){
@@ -215,7 +216,6 @@
 // }
 
 // 11 - For in
-// const arrNames = ['Tèo','Tí','Tủn']
 // const teo = {
 //     name : 'Tèo',
 //     age : 10
@@ -268,20 +268,34 @@
 // arrNumbers.splice(1,0,20,21)
 // console.log(arrNumbers)
 // splice có thể thay thế các cái trên nhưng đòi hỏi tính logic hơn
-// Lấy phần tử
-// arrNumbers.slice
+// Lấy phần tử theo vị trí (tạo mới chứ không thêm xóa sửa cũ)
+// arrNumbers.slice(start position, end position)
 
-// 13 - Higher order function (callback) (ngôn ngữ khác gọi là interface)
-function nhan2(number){
-    return number * 2
-}
+// 13 - Higher order function - truyển function vào function (callback) (ngôn ngữ khác gọi là interface)
+// function nhan2(number){
+//     return number * 2
+// }
 
-function tinhTong(arr,func){
-    let result = 0
-    for (const value of arr){
-        result += value
-    }
-    return func(result)
-}
+// function tinhTong(arr,func){
+//     let result = 0
+//     for (const value of arr){
+//         result += value
+//     }
+//     return func(result)
+// }
 
-console.log(tinhTong([1,2],nhan2))
+// console.log(tinhTong([1,2],nhan2))
+
+//14 - Hàm map - sử dụng cho Undo
+// thay đổi giá trị phần tử trong mảng
+// không thay đổi length của mảng
+// tạo ra mảng mới chứa sự thay đổi này
+// Nhân đôi giá trị trong mảng
+// const arrNumbers = [1,2,3,4,5]
+// const newArrNumbers = arrNumbers.map(function(number , index){
+//     return number * 2
+// })
+// console.log(newArrNumbers)
+// tham số index không sử dụng có thể xóa khỏi hàm map cũng được
+// map thay thế thằng phía trên, viết nhanh hơn.
+// Quản lý tập trung
